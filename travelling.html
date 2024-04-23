@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Travelling </title>
+
+    <style>
+        * {
+	margin: 0;
+	padding: 0;
+}
+
+.navbar {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	position: sticky;
+	top: 0;
+	padding: 15px;
+	cursor: pointer;
+}
+
+.background {
+	background: black;
+	background-blend-mode: darken;
+	background-size: cover;
+}
+
+.nav-list {
+	width: 70%;
+	display: flex;
+	align-items: center;
+	gap: 20px;
+	list-style: none;
+}
+
+.logo {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.logo img {
+	width: 180px;
+	border-radius: 50px;
+}
+
+.nav-list li {
+	list-style: none;
+	padding: 26px 30px;
+	padding: 10px;
+}
+
+.nav-list li a {
+	text-decoration: none;
+	color: white;
+}
+
+.nav-list li a:hover {
+	color: grey;
+}
+
+.rightnav {
+	width: 30%;
+	text-align: right;
+}
+
+#search {
+	padding: 5px;
+	font-size: 17px;
+	border: 2px solid grey;
+	border-radius: 9px;
+}
+
+.firstsection {
+	background-color: rgb(110, 203, 240);
+	height: 400px;
+}
+
+.secondsection {
+	background-color: rgb(226, 247, 112);
+	height: 400px;
+}
+
+.box-main {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	color: black;
+	max-width: 80%;
+	margin: auto;
+	height: 80%;
+}
+
+.firsthalf {
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
+.secondhalf {
+	width: 30%;
+}
+
+.secondhalf img {
+	width: 70%;
+	border: 4px solid white;
+	border-radius: 150px;
+	display: block;
+	margin: auto;
+}
+
+.text-big {
+	font-family: 'Piazzolla', serif;
+	font-weight: bold;
+	font-size: 35px;
+}
+
+.text-small {
+	font-size: 18px;
+}
+
+.btn {
+	padding: 8px 20px;
+	margin: 7px 0;
+	border: 2px solid rgb(150, 231, 236);
+	border-radius: 8px;
+	background: none;
+	color: white;
+	cursor: pointer;
+}
+
+.btn-sm {
+	padding: 6px 10px;
+	vertical-align: middle;
+}
+
+.section {
+	height: 400px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	max-width: 90%;
+	margin: auto;
+}
+
+.section-Left {
+	flex-direction: row-reverse;
+}
+
+.paras {
+	padding: 0px 65px;
+}
+
+.thumbnail img {
+	width: 250px;
+	border: 2px solid black;
+	border-radius: 26px;
+	margin-top: 19px;
+}
+
+.center {
+	text-align: center;
+}
+
+.text-footer {
+	text-align: center;
+	padding: 30px 0;
+	font-family: 'Ubuntu', sans-serif;
+	display: flex;
+	justify-content: center;
+	color: white;
+}
+
+footer {
+	text-align: center;
+	padding: 15px;
+}
+
+
+.rightnav {
+	width: 100%;
+	text-align: right;
+	margin-top: 10px;
+}
+
+#search {
+	box-sizing: border-box;
+	width: 70%;
+	padding: 8px;
+	font-size: 17px;
+	border: 2px solid grey;
+	border-radius: 9px;
+}
+
+.btn-sm {
+	padding: 8px 20px;
+	margin: 7px 5px;
+}
+
+img {
+	max-width: 50%;
+	height: auto;
+}
+
+    </style>
+	<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+	<nav class="navbar background">
+		<div class="logo">
+			<img src="logo.jpg.jfif" 
+            style="height: 30px";
+            alt="Logo1">
+		</div>
+		<ul class="nav-list">
+			<li><a href="#web">Mubai</a></li>
+			<li><a href="#program">Kerla</a></li>
+			<li><a href="#course">Goa</a></li>
+		</ul>
+		<div class="rightnav">
+			<input type="text"
+				name="search"
+				id="search">
+			<button class="btn btn-sm required">Search</button>
+		</div>
+	</nav>
+
+	<section class="firstsection">
+		<div class="box-main">
+			<div class="firstHalf">
+				<h1 class="text-big"
+					id="web">Mubai
+				</h1>
+				<p class="text-small">
+	Mumbai, previously known as Bombay is one of the most populous and biggest cities of Maharashtra. Also the biggest
+    metropolis of this state,Mumbai is also popular as the entertainment and financial capital. It is the 
+largest city of India and fondly called as the city of dreams. It is a place filled with dreamers 
+and people who work hard day and night to achieve their dreams. 
+				</p>
+				<img src="mubai.jpg.jfif" 
+            style="height: 200px;width: 400px;">
+
+
+			</div>
+		</div>
+	</section>
+
+	<section class="secondsection">
+		<div class="box-main">
+			<div class="firstHalf">
+				<h1 class="text-big"
+					id="program">
+					Kerla
+				</h1>
+				<p class="text-small">
+					Kerala is a popular state located on the southwestern, Malabar Coast 
+                    of India. As per the state geographical area, Kerala is the twenty 
+                    second largest Indian state by area. It is surrounded by Karnataka to
+                     the north and northeast, Tamil Nadu to the east and south, and Lakshadweep 
+                     Sea and Arabian Sea to the West. The state is divided into fourteen districts
+                      with the capital being Thiruvananthapuram. 
+				</p>
+				<img src="kerla.jpg.jfif" 
+            style="height: 200px;width: 400px;">
+			</div>
+		</div>
+	</section>
+
+	<section class="section">
+		<div class="paras">
+			<h1 class="sectionTag text-big">Goa</h1>
+			<p class="sectionSubTag text-small">
+				Think of Goa, and think of a coastal retreat with sights
+                 of gleaming sands and azure waters with a shimmering sun 
+                 in the backdrop. A lush green landscape edges the golden coastline,
+                  which overlooks the scintillating seas in the beach capital of India.
+                   Although the smallest state in the country, Goa is one of the nation’s biggest tourist destinations.
+			</p>
+			<img src="goa.jpg.jfif" 
+            style="height: 200px ;width: 400px;">
+		</div>
+
+		
+	</section>
+
+	<footer class="background">
+		<p class="text-footer">
+			travelling©-All rights are reserved
+		</p>
+	</footer>
+</body>
+
+</html>
